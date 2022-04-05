@@ -1,0 +1,89 @@
+
+<div id="section-1" class="middleContainer">
+  <img class="bgImage" src="../../assets/images/Background.png" alt="Logo" />
+  <!-- <div class="vanillaTilt" data-tilt data-tilt-scale="1.1"> -->
+  <!-- <div> -->
+  <!-- <img src="../../assets/images/mail.png" alt="Logo" /> -->
+  <!-- <span>Polarized</span> -->
+  <!-- </div> -->
+  <!-- <button class="seemore">See more</button> -->
+
+  <div class="container">
+    <img src="../../assets/images/mail.png" alt="Logo" />
+
+    <div class="infoCard vanillaTilt"
+      style="will-change: transform; transform: perspective(1000px) rotateX(3.76deg) rotateY(-11.88deg) scale3d(1, 1, 1); transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;">
+      <div class="descCard">
+        <p>
+          <!-- Polarized is a web 3 decentralized electronic music label bridging the gap between the real and the virtual
+          world.
+          This is a mission to reshape the way we experience music.
+          One of the most distinguished elements about music is that it brings people together. For us, it started with
+          that
+          and became the reason why we commited to start our project which is above all to unify open brilliant minds
+          from
+          different cultures toward the same interest, music & art. We are calling people looking for the same desire,
+          looking for adventures, for abundance and ready to see music from a different perspective. What if we tell you
+          that together, we can start by reshaping the way people enjoy music and then keep the party going by making
+          physical music events at the best locations around the world. A set of DAO driven events where the community
+          chooses the artists & the secret locations? -->
+
+          WE ARE A DECENTRALIZED MUSIC LABEL !
+          We are united, we are one.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <img class="bgImage2" src="../../assets/images/background-green.jpeg" alt="Logo" /> -->
+
+<!-- Section 2 -->
+<!-- <div id="roadmap" class="middleContainer">
+
+  <div>
+    <p>
+      Polarized is a web 3 decentralized electronic music label bridging the gap between the real and the virtual world,
+      and on a mission to reshape the way we experience music.
+      One of the most distinguished elements about music is that it brings people together. For us, it started with that
+      and became the reason why we commited to start our project which is above all to unify open brilliant minds from
+      different cultures toward the same interest, music & art. We are calling people looking for the same desire,
+      looking for adventures, for abundance and ready to see music from a different perspective. What if we tell you
+      that together, we can start by reshaping the way people enjoy music and then keep the party going by making
+      physical music events at the best locations around the world. A set of DAO driven events where the community
+      chooses the artists & the secret locations?
+    </p>
+  </div>
+</div> -->
+
+<!-- Section 3 -->
+<!-- <div id="team" class="middleContainer">
+  <div class="vanillaTilt" data-tilt data-tilt-scale="1.1">
+  </div>
+  <div class="vanillaTilt" data-tilt data-tilt-scale="1.1">
+    <img src="../../assets/images/logomark.png" alt="Logo" />
+    <span>Our Team</span>
+  </div>
+</div> -->
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script src="https://oblador.github.io/angular-scroll/angular-scroll.min.js"></script>
+<script>
+  angular.module('myApp', ['duScroll']).
+  controller('MyCtrl', function ($scope, $document) {
+    $scope.toTheTop = function () {
+      $document.scrollTop(0, 5000);
+    }
+    var section2 = angular.element(document.getElementById('section-2'));
+    $scope.toSection2 = function () {
+      $document.scrollTo(section2, 30, 1000);
+    }
+  });
+
+</script>
+

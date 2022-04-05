@@ -1,0 +1,244 @@
+.kalao {
+  width: 140px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px 50px 200px 50px;
+  box-shadow: 1px 1px 10px rgba(61, 49, 49, 0.2);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.disabled{
+  background-color: rgba(218, 218, 218, 0.783);
+  cursor: pointer;
+  font-size: 11px;
+  outline: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 50px 50px 200px 50px;
+  color: rgb(240, 240, 240);
+}
+
+ul{
+  list-style-type: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 200px;
+  top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.list li a {
+  width: 120px
+}
+
+.list li .kalao:hover {
+  background-color: rgba(14, 107, 220, 0.633);
+  color: #fff
+}
+
+@media only screen and (max-width: 678px) {
+  .container {
+    width: 90%
+  }
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 890px;
+}
+
+
+
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+
+
+/* Giving a background-color to the nav container. */
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.502);
+  box-shadow: 20px 20 50px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: min-content;
+  right: 10px;
+  top: 10px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block;
+  padding: 8px;
+}
+
+nav ul li:hover>ul {
+  display: inherit;
+}
+
+
+
+
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width : 1024px) {
+  .list {
+    right: 10px;
+  }
+}
+@media all and (max-width : 768px) {
+
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  .list {
+    top: 65px;
+    background-color: rgba(255, 255, 255, 0.502);
+    box-shadow: 20px 20 50px rgba(0, 0, 0, 0.5);
+  }
+
+  nav {
+    margin: 0;
+    top: 25px;
+  }
+
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color: transparent;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+  }
+
+  // .toggle:hover {
+  // 	background-color: #000000;
+  // }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked+ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #000000;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+  }
+
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: #212121;
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+
+  /* Hide menus on hover */
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+
+  }
+
+}
+
+@media all and (max-width : 330px) {
+
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
+
+}

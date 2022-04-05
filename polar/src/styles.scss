@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'jost';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/jost'); /* IE9 Compat Modes */
+  src: local('jost'),
+       url('/assets/fonts/Jost-Italic-VariableFont_wght.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Jost-VariableFont_wght.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  margin : 0 100px;
+  font-family: 'jost';
+  background-color: #fff;
+}
+
+

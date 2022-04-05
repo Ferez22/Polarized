@@ -1,0 +1,39 @@
+<!-- <ul class="list">
+  <li><a class="kalao" mat-button>Gallery</a>
+  </li>
+  <li><a class="kalao" mat-button>Twitter</a>
+  </li>
+  <li><a class="kalao" mat-button>Discord</a>
+  </li>
+</ul> -->
+
+<nav>
+
+  <label for="drop" class="toggle">
+  </label>
+  <input type="checkbox" id="drop" />
+      <ul class="menu list">
+          <li><a href="#" class="disabled">Coming soon ..</a></li>
+          <li><a href="https://twitter.com/polarizednft?s=21" target="_blank" class="kalao">Twitter</a></li>
+          <li><a href="https://discord.gg/WYMb5ESw" target="_blank"  class="kalao">Discord</a></li>
+      </ul>
+  </nav>
+
+<script>
+  $("#menu-toggler").click(function () {
+    toggleBodyClass("menu-active");
+    console.log("hi")
+  });
+
+  function toggleBodyClass(className) {
+    document.body.classList.toggle(className);
+  }
+  // document.getElementById("menu-toggler").addEventListener("click", displayDate);
+
+  function displayDate() {
+    console.log("hi")
+  }
+
+  displayDate();
+
+</script>
